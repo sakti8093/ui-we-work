@@ -1,0 +1,163 @@
+.hero {
+    position: relative;
+  }
+  
+  .hero_header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 10px;
+  }
+  
+  .hero_header button{
+    background-color: var(--color-green);
+    color: var(--color-white);
+    width: 147px;
+    height: 40px;
+    border: none;
+    border-radius: 5px;
+    font-weight: 700;
+  }
+  
+  .heroimg{
+    margin-top: 20px;
+    width: 100%;
+    position: relative;
+  }
+  
+  .heroimg img{
+    width: 100%;
+  }
+  
+  .skewimgcontainer{
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
+  
+  .skewimgcontainer div{
+    position: relative;
+  }
+
+
+    .textv1{
+    font-size: 36px;
+    font-weight: 800;
+    }
+  
+  .skewimgcontainer div>p{
+    width: 280px;
+    position: absolute;
+    font-size: 48px;
+    font-weight: 900;
+    margin-top: -56px;
+    margin-left: -140px;
+    left: 50%;
+    top: 50%;
+  }
+  
+  .herocard{
+    display: flex;
+    gap: 15px;
+    padding: 12px 25px;
+    align-items: center;
+    position: absolute;
+    bottom:-50px;
+    left: 20px;
+    border-radius: 20px;
+    background-color: var(--color-white);
+  }
+
+@media screen and (min-width:768px) and (max-width:1024px){  
+    .textv1{
+        font-size: 22px;
+    }
+    .skewimgcontainer div img{
+      width: 324px;
+    }
+  
+    .skewimgcontainer div>p{
+      font-size: 30px;
+      width: 86px;
+      height: 58px;
+      margin-left: -65px;
+      margin-top: -29px;
+    }
+
+    .heroimg{
+        margin-top: 15px;
+    }
+  
+    .heroimg img {
+      height: 132px;
+    }
+
+    .herocard{
+        padding: 5px;
+        border-radius: 10px;
+        bottom: -40px;
+    }
+
+    .herocard >:first-child{
+        width: 56px;
+        height: 56px;
+    }
+ }
+
+@media screen and (max-width: 425px) {
+    .textv1{
+        font-size: 16px;
+    }
+
+    .hero_header button{
+        width: 114px;
+    }
+
+    .skewimgcontainer div>p{
+        width: 85px;
+        font-size: 16px;
+        line-height: 18px;
+        margin-top: -10px;
+        margin-left: -30px;
+    }   
+    .heroimg{
+        height: 82px;
+        margin-top: 10px;
+    }
+
+    .herocard{
+        padding: 5px;
+        border-radius: 5px;
+        left: 10px;
+    }
+
+    .herocard >:first-child{
+        width: 36px;
+        height: 36px;
+    }
+    
+    .herocard >:nth-child(2){
+        width: 8px;
+        height: 8px;
+    }
+
+    .herocard >:last-child{
+        width: 46px;
+        height: 46px;
+    }
+    
+
+    .skewimgcontainer div img{
+        width: 162px;
+        height: 82px;
+    }
+
+    .herocard{
+        bottom: -30px;
+    }
+
+    .heroimg img{
+        width: 100%;
+        height: 82px;
+    }
+ }
